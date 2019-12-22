@@ -1,0 +1,50 @@
+ABSTRACT
+Our “Small Interpreter Program” Project is a simple intrepreter built using c programming language. It processess each line at a time and throws an error if found. Although the program has ony two datatypes (integer and floating point), it assigns datatype to the variable dynamically.
+The datastructures used are linked list (to store dynamic data variabls)and stacks (to evaluate the given expression).
+
+Advantages:
+Our Project can be used to build small programs.
+Can be used as intrepret mode.
+Can intrepret program from files.(With a bit of change in code)
+
+
+DESCRIPTION OF DATA STRUCTURE, LOGIC AND FUNCTIONALITY 
+
+Data Structures:
+Linked List:A linked list is a linear data structure where each element is a separate object. Each element of a list is comprising of two items - the data and a reference to the next node. The last node has a reference to null. The entry point into a linked list is called the head of the list.
+
+Stacks:A stack is a limited access data structure - elements can be added and removed from the stack only at the top, push adds an item to the top of the stack, pop removes the item from the top.
+
+Logic: 
+We use string tokenisation to tokenise each program statement line and compare the first token to call it’s specific function to evaluate the rest of it’s token. 
+We make use of infinite loop for line by line evaluation, until we encounter exit statement.
+
+Main functions implemented in this project are:
+
+if_evaluation() : To evaluate the if conditional statements.
+Syntax:
+	if conditional_statement then program_statement
+
+times_evaluate() : To evaluate the program statements specified in the times loop, by the number of times specified.
+Syntax:
+	times no_of_times program_statement
+
+print_evaluate() : To search for assigned variables and print them on the user’s terminal.
+Syntax:
+	print variable_name
+
+print_err() : To print the errors encountered during execution of the program.
+Syntax:
+	print_err(“error sentence”)
+expression_evaluation() : To assign value/expression to the given variable.
+Syntax:
+	variable_name = expression/value
+
+
+
+CONCLUSION
+This project can be improved by adding more functionality and more datatypes.
+
+Note*
+This is not the real deal, contains bugs and not optimized by any means.
+And this is highly syntax dependent.
